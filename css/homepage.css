@@ -1,0 +1,255 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.homeAbout {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url("../media/programming.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+.homeAbout .about {
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+}
+.homeAbout .about .developer {
+  color: red;
+}
+.homeAbout .about p {
+  color: white;
+  font-weight: 900;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card .langCard {
+  text-align: center;
+  width: 20vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  -webkit-box-shadow: 1px 1px 1px #aaaaaa;
+          box-shadow: 1px 1px 1px #aaaaaa;
+  margin-right: 3rem;
+}
+.card .langCard .languages {
+  color: chocolate;
+}
+.card .internCard {
+  text-align: center;
+  width: 20vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  -webkit-box-shadow: 1px 1px 1px #aaaaaa;
+          box-shadow: 1px 1px 1px #aaaaaa;
+}
+.card .internCard .company {
+  color: chocolate;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .card .langCard {
+    width: 100vw;
+    margin-bottom: 6px;
+  }
+  .card .internCard {
+    width: 100vw;
+  }
+}
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  height: 4rem;
+}
+@media screen and (max-width: 480px) {
+  .nav .navList li {
+    display: none;
+  }
+  .nav .hambuger {
+    cursor: pointer;
+    top: 10px;
+    position: absolute;
+    right: 30px;
+    color: #b6a8a8;
+    z-index: 2;
+  }
+  .nav .hambuger .top {
+    height: 1px;
+    width: 15px;
+    background-color: white;
+    position: relative;
+    z-index: 3px;
+  }
+  .nav .hambuger .middle {
+    height: 1px;
+    width: 15px;
+    background-color: white;
+    position: relative;
+    top: 5px;
+  }
+  .nav .hambuger .bottom {
+    height: 1px;
+    width: 15px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    width: 10px;
+  }
+}
+.nav .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  font-weight: 900;
+  font-size: x-large;
+}
+.nav .navList li {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  margin-right: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.nav .navList li:hover {
+  background-color: sandybrown;
+}
+
+.home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../media/programming.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.home .intro {
+  font-weight: 900;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.home .name {
+  font-weight: 900;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: crimson;
+}
+.home .position {
+  font-weight: 900;
+  color: white;
+  font-size: 60px;
+  z-index: 2;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.mobileViewNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: white;
+  top: 0px;
+  right: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.9);
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.closeBtn {
+  display: none;
+  z-index: 4;
+  position: relative;
+  bottom: 624px;
+  left: 328px;
+}
+.closeBtn .right {
+  background-color: white;
+  z-index: 4;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.closeBtn .left {
+  background-color: white;
+  z-index: 4;
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}/*# sourceMappingURL=homepage.css.map */

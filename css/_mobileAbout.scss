@@ -1,0 +1,15 @@
+@media screen and (max-width:480px) {
+    .card{
+ display:flex;
+ flex-flow: column;
+.langCard{
+    width:100vw;
+    margin-bottom: 6px;
+}
+.internCard{
+    width:100vw;
+}
+
+    }
+    
+}

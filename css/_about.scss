@@ -1,0 +1,79 @@
+body{
+    background-color: rgba(0,0,0 ,0.8);
+}
+
+.homeAbout{
+    height:70vh;
+ 
+    display:flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    justify-content: flex-end;
+    
+    @include background(DarkGray);
+    .about{
+       
+        
+     align-self: center;
+     text-align: center;
+            .developer{
+                
+                color:red;
+
+            }
+            p{
+                color:white;
+                @include fontweight(bold);
+            }
+ 
+
+
+    
+}
+
+    
+margin-bottom: 0.5rem;
+}
+
+.card{
+    display: flex;
+   
+    justify-content: center;
+
+
+.langCard{
+
+
+   
+    text-align: center;
+   // height: 30vh;
+    width:20vw;
+    background:rgba(0,0,0 ,0.5);
+    color:white;
+    box-shadow: 1px 1px 1px #aaaaaa;
+
+    .languages{
+        color:chocolate
+    } 
+    
+    margin-right:3rem
+}
+
+.internCard{
+   
+    text-align: center;
+    // height: 30vh;
+     width:20vw;
+     background:rgba(0,0,0 ,0.5);
+     color:white;
+     box-shadow: 1px 1px 1px #aaaaaa;
+
+     .company{
+         color:chocolate;
+     }
+}
+
+
+
+    }

@@ -1,0 +1,6 @@
+@mixin background( $theme: DarkGray){
+    background-image: url('../media/programming.jpg');
+  //  box-shadow: 0 0 1px rgba($theme, 1);
+    background-position: center;
+    background-size: cover;
+}

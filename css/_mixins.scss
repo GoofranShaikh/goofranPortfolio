@@ -1,0 +1,33 @@
+@mixin fontweight($weight) {
+    font-weight: map-get($font-weights, $weight );
+    
+};
+
+
+@mixin name{
+    // font-family: 'Ubuntu', sans-serif;
+    @include fontweight(bold);
+    color:white;
+    font-size: 60px;
+   // position:relative;
+    z-index: 2;
+    align-self: center;
+    
+   // top: 17rem;
+   // left:25rem;
+}
+
+@mixin hamburger{
+    height:1px;
+    width:15px;
+    background-color:white;
+    position: relative;
+}
+
+@mixin closeButton{
+    background-color: white;
+    z-index:4;
+    position:absolute;
+    width:10px;
+    height:1px;
+}
