@@ -1,4 +1,4 @@
-@import './entirebody.scss','./fontWeight','./background','./mixins','./about','./mobileAbout';
+@import './entirebody.scss','./fontWeight','./background','./mixins','./about','./mobileView','./project';
 
 
 .nav{
@@ -7,37 +7,6 @@
     width:100vw;
     background:rgba(0, 0, 0,0.7);
     height:4rem;
-    @media screen and (max-width: 480px) {
-    .navList {
-        li{
-        display :none;
-    }
-        }
-   .hambuger{
-       cursor: pointer;
-       top:10px;
-       position: absolute;
-       right:30px;
-       color:rgb(182, 168, 168);
-       z-index: 2;
-
-       .top{  
-           @include hamburger() ;
-           z-index: 3px;
-       }
-       .middle{
-        @include hamburger() ;
-        top:5px;
-        
-       }
-       .bottom{
-        @include hamburger() ;
-        top:10px;
-        width:10px;
-       }
-
-   }
-}
 
     
 .navList{
@@ -47,24 +16,39 @@
   
    
     list-style: none;
-    @include fontweight ($weight:bold);
+   font-weight: fontweight(regular);
    font-size: x-large;
   
+a{
+    text-decoration: none;
 
+}
 
     li{
+       
         position:relative;
         left:10px;
         top:10px; 
         margin-right:30px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color:white;
+        cursor: pointer;
+
+        &:hover{
+            transition: 1s;
+            font-size: xx-large;
+        }
+
+  
     }
 
-    li:hover{
-        background-color: sandybrown;
-    }
+  
 }
+.mobileViewNav{
+    display: none;
+}
+
+
 }
 .home{
 height:100vh;
@@ -89,44 +73,43 @@ justify-content: center;
     @include name;
    
 }
-
-
 }
-.mobileViewNav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-    color:white;
-    top:0px;
-    right:0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.copyright{
+    font-size: 20px;
     width:100vw;
-    height:100vh;
-    z-index:3;
-    transition: 0.5s;
-    background: rgba(0,0,0, 0.9);
-    @include fontweight(bold);
-    font-size:60px;
+    display:flex;
+    justify-content: center;
+    color:white;
+    position:fixed;
+    bottom:20px;
+}
+footer{
+
+
+      display: flex;
+      flex-flow:column;
+      right:0px;
+      position: fixed;
+      bottom: 130px;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      font-size: 40px;
+      color: white;
+      a{
+          color:white;
+          text-decoration: none;
+      }
+      .fab{
    
+        margin-bottom:2px;
+        cursor: pointer;
+
+      &:hover{
+           transition: 1s;
+          color:chocolate;
+      }
+    }
 }
 
 
-.closeBtn{
-display: none;
-
- z-index:4;
- position:relative;
- bottom:624px;
- left:328px;
-
- .right{
-    @include closeButton;
-    transform: rotate(45deg);
- }
- .left{
-    @include closeButton;
-   transform: rotate(-45deg);
-}
-
-}
