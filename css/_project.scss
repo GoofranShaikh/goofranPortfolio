@@ -1,0 +1,104 @@
+
+.projectSection{
+height:40vh;
+display:flex ;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-bottom:10px;
+color:rgb(247, 109, 10);
+font-size: 40px;
+font-weight: fontweight(medium);
+
+@include background(DarkGray);
+}
+.projects{
+   
+ display :flex;
+ flex-wrap: wrap;
+ justify-content:center;
+ align-items: center;
+
+    width:100vw;
+  //  background-color: #2196F3;
+  a{
+    text-decoration: none;
+
+ }
+  .project{
+    
+     
+      margin-bottom:10px;
+      margin-right: 10px;
+      border-bottom: 4px solid chocolate;
+      width:30vw;
+      height: 30vh;
+   
+
+
+  }
+
+    .calculator{
+      
+        @include calc
+        
+    }
+    .clock{
+        @include clock
+    }
+    .dinoGame{
+        @include game
+    }
+    .crudApp{
+        @include crud(grey);
+        font-size: x-large;
+        font-weight: fontweight(medium);
+        color:white;
+        text-align:center;
+    }
+    .ecommerce{
+        @include ecommerce(grey);
+        font-size: x-large;
+        font-weight: fontweight(medium);
+        color:white;
+        text-align:center;
+        vertical-align: center;
+    }
+}
+.project-copyright{
+    font-size: 20px;
+    //width:100vw;
+    // display:flex;
+    // justify-content:flex-end;
+
+    color:white;
+    position:fixed;
+    bottom:70px;
+    left:-56px;
+    transform: rotate(-90deg);
+}
+
+footer{
+
+
+    display: flex;
+    flex-flow:column;
+    right:0px;
+    position: absolute;
+    bottom: 130px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    font-size: 40px;
+    color: white;
+    .fab{
+        margin-bottom:2px;
+        cursor: pointer;
+
+
+      &:hover{
+        
+          color:chocolate;
+      }
+    }
+}

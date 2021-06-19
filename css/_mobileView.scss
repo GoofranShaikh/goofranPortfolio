@@ -1,0 +1,120 @@
+@media screen and (max-width:480px) {
+    .card{
+ display:flex;
+ flex-flow: column;
+.langCard{
+    width:70vw;
+    margin-bottom: 6px;
+}
+.internCard{
+    width:70vw;
+}
+
+    }
+
+    .mobileViewNav{
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    color:white;
+    top:0px;
+    right:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:100vw;
+    height:100vh;
+    z-index:3;
+    transition: 0.5s;
+    background: rgba(0,0,0, 0.9);
+    font-weight: fontweight(bold);
+    font-size:60px;
+
+    a{
+       margin:27px;
+        list-style: none;
+        text-decoration:none;
+        color:white;
+    }
+   
+}
+.projects{
+display: flex;
+flex-direction: column  ;
+justify-content: space-evenly;
+
+margin:auto;
+.project{
+width:60vw;
+
+}
+    
+}
+    
+}
+
+@media screen and (max-width: 480px) {
+    .navList {
+        li{
+        visibility:hidden;
+    }
+        }
+
+   .hambuger{
+      
+       cursor: pointer;
+       top:10px;
+       position: absolute;
+       right:30px;
+       color:rgb(182, 168, 168);
+       z-index: 3;
+
+       .top{  
+           @include hamburger() ;
+           z-index: 3px;
+       }
+       .middle{
+        @include hamburger() ;
+        top:5px;
+        
+       }
+       .bottom{
+        @include hamburger() ;
+        top:10px;
+        width:10px;
+
+   
+    
+       }
+
+
+   }
+
+
+
+}
+
+.closeBtn{
+    display: none;
+    
+    cursor: pointer;
+    top:10px;
+    position: absolute;
+    right:30px;
+    color:rgb(182, 168, 168);
+    z-index: 3;
+    
+    
+     .right{
+        @include closeButton;
+        transform: rotate(45deg);
+     }
+     .left{
+        @include closeButton;
+       transform: rotate(-45deg);
+    }
+
+    
+    }
+
+

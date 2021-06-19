@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/homepage.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/bd433c13c8.js" crossorigin="anonymous"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
     <title>Goofran's portfolio</title>
 </head>
@@ -16,7 +18,15 @@
         <ul class="navList" id="navList">
             <a href="./portfolio.html"> <li>  Home</li></a> 
             <a href="./about.html"><li>  About</li></a>
-            <li> <a href="project"></a> Project</li>
+            <a href="./project.html"><li> Projects</li></a>
+
+        </ul>
+
+        <ul class="mobileViewNav " id="mobileViewNav">
+
+            <a href="./portfolio.html"><li>Home</li></a>  
+            <a href="./about.html"><li>  About</li></a>
+            <a href="./project.html"><li>Projects</li></a>
 
         </ul>
     </div>
@@ -26,6 +36,12 @@
         <div class="middle"></div>
         <div class="bottom"></div>
     </div>
+    <div class="closeBtn" onclick="closeMobileNav()"> 
+        <div class="right"></div>
+        <div class="left"></div>
+        
+        
+        </div>
 </div>
 <div class="homeAbout">
 <span class="about">
@@ -37,14 +53,9 @@
 
 
 </div>
-<div class="closeBtn" onclick="closeMobileNav()"> 
-<div class="right"></div>
-<div class="left"></div>
 
-
-</div>
 <div class="card">
-<div class="langCard">
+<div class=" about langCard">
 
 
 <h2 class="languages">Stack which i work upon:</h2>
@@ -57,8 +68,10 @@
 <li class="techstack">Scss</li>
 
 </div>
-<div class="internCard">
-    <h2 class="company">AWS</h2>
+<i><div class="timeline" >Timeline:</div></i>
+<div class="about  internCard">
+    <h2 class="company">AWS (Linux & Hardware Engg Intern) 
+      <span>Duration:(6 months)</span></h2>
     <h3 class="workTitle">Supported new region build for AWS</h3>
     <p class="work">
 
@@ -71,6 +84,15 @@ Troubleshooting of servers
 
 
 </div>
+<span class="about-copyright">&copy; Goofran Shaikh</span>
+<footer>
+<a href="https://github.com/"><i class="fab fa-github"></i></a>
+<a href="https://www.hackerrank.com/goofranshaikh98/"><i class="fab fa-hackerrank"></i></a>
+<a href="https://www.linkedin.com/in/goofran-shaikh-0067b29a/"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.instagram.com/goofranshaikh/"><i class="fab fa-instagram"></i></a>
+
+</footer>
     <script src="../js/home.js"></script>
 </body>
+
 </html>

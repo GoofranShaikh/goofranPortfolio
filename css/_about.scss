@@ -3,7 +3,7 @@ body{
 }
 
 .homeAbout{
-    height:70vh;
+    height:40vh;
  
     display:flex ;
     flex-direction: column;
@@ -24,7 +24,7 @@ body{
             }
             p{
                 color:white;
-                @include fontweight(bold);
+                font-weight: fontweight(bold);
             }
  
 
@@ -38,8 +38,17 @@ margin-bottom: 0.5rem;
 
 .card{
     display: flex;
-   
+   flex-flow: column;
     justify-content: center;
+    align-items: center;
+    .timeline{
+      color:white;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 40px;
+    }
+    .about{
+        border-bottom:  4px solid chocolate;
+    }
 
 
 .langCard{
@@ -48,23 +57,28 @@ margin-bottom: 0.5rem;
    
     text-align: center;
    // height: 30vh;
-    width:20vw;
+    width:80vw;
     background:rgba(0,0,0 ,0.5);
     color:white;
     box-shadow: 1px 1px 1px #aaaaaa;
 
     .languages{
-        color:chocolate
-    } 
+        color:chocolate;
+
     
-    margin-right:3rem
+    } 
+    .techstack{
+        list-style: none;
+   }
+    
+    margin-bottom: 1rem;
 }
 
 .internCard{
    
     text-align: center;
     // height: 30vh;
-     width:20vw;
+     width:80vw;
      background:rgba(0,0,0 ,0.5);
      color:white;
      box-shadow: 1px 1px 1px #aaaaaa;
@@ -77,3 +91,34 @@ margin-bottom: 0.5rem;
 
 
     }
+    .about-copyright{
+        font-size: 20px;
+        color:white;
+        position:fixed;
+        bottom:70px;
+        left:-56px;
+        transform: rotate(-90deg);
+    }
+    footer{
+
+
+        display: flex;
+        flex-flow:column;
+        right:0px;
+        position: fixed;
+        bottom: 130px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        font-size: 40px;
+        color: white;
+        .fab{
+            margin-bottom:2px;
+            cursor: pointer;
+    
+          &:hover{
+            
+              color:chocolate;
+          }
+        }
+  }

@@ -1,5 +1,10 @@
 $font-weights:(
-    "regualar":200,
-    "medium":500,
+    "regular":200,
+    "medium":100,
     "bold":900,
     );
+
+    @function fontweight($weight) {
+        @return  map-get($font-weights, $weight );
+        
+    };

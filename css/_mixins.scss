@@ -1,12 +1,9 @@
-@mixin fontweight($weight) {
-    font-weight: map-get($font-weights, $weight );
-    
-};
+
 
 
 @mixin name{
     // font-family: 'Ubuntu', sans-serif;
-    @include fontweight(bold);
+    font-weight: fontweight(medium);
     color:white;
     font-size: 60px;
    // position:relative;
