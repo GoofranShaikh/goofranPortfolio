@@ -456,6 +456,20 @@ footer .fab:hover {
   z-index: 2;
   -ms-flex-item-align: center;
       align-self: center;
+  padding: 1px;
+}
+.home a {
+  color: white;
+  text-decoration: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: x-large;
+}
+.home a:hover {
+  background-color: chocolate;
+  border-radius: 2px;
 }
 
 .copyright {

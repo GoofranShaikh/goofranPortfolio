@@ -60,7 +60,7 @@ justify-content: center;
 @include background(DarkGray);
 
 .intro{
-@include name;
+    @include name;
 
     
 }
@@ -71,8 +71,22 @@ justify-content: center;
 
 .position{
     @include name;
+    padding:1px;
    
 }
+a{  color:white;
+    text-decoration:none;
+    align-self:center;
+    border: 2px solid white;
+    padding:10px;
+    font-size: x-large;
+
+    &:hover{
+        background-color: chocolate;
+        border-radius: 2px;
+    }
+}
+
 }
 .copyright{
     font-size: 20px;
